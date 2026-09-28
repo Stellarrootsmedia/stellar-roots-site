@@ -217,15 +217,29 @@ button { font:inherit; cursor:pointer; }
 @media (max-width:900px){ .creative-grid{ grid-template-columns:repeat(3,1fr);} }
 @media (max-width:560px){ .creative-grid{ grid-template-columns:repeat(2,1fr);} }
 
-/* ---------- Proof (bold stat row) ---------- */
-.proof-stats { display:grid; grid-template-columns:repeat(3,1fr); max-width:960px; margin-inline:auto; }
-.pstat { padding:0.6rem 1.2rem; text-align:center; position:relative; }
-.pstat + .pstat::before { content:""; position:absolute; left:0; top:15%; bottom:15%; width:1px; background:var(--line); }
-.pstat b { font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(2.8rem,7vw,5rem); line-height:0.95; letter-spacing:-0.03em; color:var(--cream); display:block; }
-.pstat b .u { color:var(--accent); }
-.pstat > span { color:var(--muted); font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.16em; text-transform:uppercase; display:block; margin-top:0.9rem; }
-.proof-note { text-align:center; margin:1.8rem auto 3.6rem; font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted-2); }
-@media (max-width:640px){ .proof-stats{ grid-template-columns:1fr; gap:1.8rem; } .pstat + .pstat::before { left:30%; right:30%; top:-0.9rem; bottom:auto; width:auto; height:1px; } }
+/* ---------- Proof: campaign types ---------- */
+.ctypes { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; max-width:1000px; margin:0 auto clamp(3rem,6vw,4.4rem); }
+.ctype { position:relative; padding:clamp(1.6rem,3vw,2.2rem); border:1px solid var(--line); border-radius:var(--radius-lg); background:linear-gradient(160deg, rgba(228,200,120,0.07), transparent 55%), var(--surface); overflow:hidden; }
+.ctype::after { content:""; position:absolute; right:-40px; top:-40px; width:160px; height:160px; border-radius:50%; border:1px solid rgba(228,200,120,0.18); }
+.ctype .no { font-family:'Space Mono',monospace; font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); }
+.ctype h3 { font-size:var(--step-2); text-transform:uppercase; margin:0.7rem 0 0.6rem; }
+.ctype p { color:var(--muted); max-width:36ch; }
+@media (max-width:720px){ .ctypes{ grid-template-columns:1fr; } }
+.receipts-note { text-align:center; margin-top:0.6rem; font-family:'Space Mono',monospace; font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted-2); }
+
+/* ---------- Every front (SEO / GEO / brand) ---------- */
+.fronts { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid var(--line-2); }
+.front { padding:clamp(1.6rem,3vw,2.4rem) clamp(1.2rem,2.4vw,2rem) clamp(1.6rem,3vw,2.4rem) 0; position:relative; }
+.front + .front { padding-left:clamp(1.2rem,2.4vw,2rem); border-left:1px solid var(--line); }
+.front::before { content:""; position:absolute; top:-1px; left:0; width:48px; height:2px; background:var(--accent); }
+.front + .front::before { left:clamp(1.2rem,2.4vw,2rem); }
+.front .no { font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); }
+.front h3 { font-size:var(--step-2); text-transform:uppercase; margin:0.8rem 0 0.8rem; }
+.front p { color:var(--muted); font-size:0.98rem; }
+.front p strong { color:var(--fg); font-weight:600; }
+.pull { margin-top:clamp(3rem,7vw,5rem); text-align:center; font-family:'Space Grotesk',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:-0.02em; line-height:1.02; font-size:clamp(2rem,1.3rem + 3.6vw,4.6rem); }
+@media (max-width:860px){ .fronts{ grid-template-columns:1fr; } .front, .front + .front { padding:1.8rem 0; border-left:0; border-top:1px solid var(--line); } .front + .front::before { left:0; } }
+
 .tgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.3rem; }
 .tcard { border:1px solid var(--line); border-radius:var(--radius-lg); padding:1.7rem; background:var(--surface); }
 .tcard .q { font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:1.05rem; line-height:1.4; }

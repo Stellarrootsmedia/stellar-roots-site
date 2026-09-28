@@ -14,9 +14,16 @@
 Stellar Roots Media works on simple monthly retainers, delivered as an outsourced creative and advertising department. Scope ranges from managed Meta advertising with performance creative up to a full engine that adds quarterly video capture, organic content, and search/authority work. Specific packages and pricing are shared on a discovery (strategy) call; ad spend is separate and paid directly to Meta.
 
 ## Documented results
-- Networking Austin (Meta lead campaign): 819 leads at $2.77 cost per lead (lifetime; $2.84 last 30 days), 111,933 impressions on an $8/day budget.
+- Local business group (Meta lead campaign, lifetime): 819 leads at $2.77 per lead on an $8/day budget, 111,933 impressions.
+- High-ticket retail (Meta form lead campaign, lifetime): 145 form leads at $24.74 per lead, 84,370 impressions.
 - +2,776% organic impressions; +69.7% follower growth (Instagram).
-- Premier Mattress (high-ticket retail, Meta form leads): 145 leads at $24.74 per lead, $3,587.67 spent, 84,370 impressions (May 2023 – Jun 2026).
+
+## Content approach
+Every capture session produces content that works on three fronts:
+- **SEO (search engine optimization):** content and pages shaped around what customers search, so the business appears when buyers are ready.
+- **GEO (generative engine optimization):** structuring content so AI assistants such as ChatGPT, Google AI Overviews and Perplexity clearly understand and can recommend the business.
+- **Brand equity:** real owners, real work and real proof that show why this business is the best choice.
+Philosophy: "We don't push your industry. We push your business." Serves both high-ticket brands (fewer, better-qualified buyers) and local businesses that rely on lead volume.
 
 ## Clients
 Brands Stellar Roots Media has worked with include Buc-ee's, Fairmont, Harlem Globetrotters, Icelandic Glacial, Networking Austin, Apex Pursuit, Archery Country, Turtlebox, and Premier Mattress.
