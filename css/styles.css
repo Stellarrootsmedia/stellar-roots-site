@@ -193,6 +193,17 @@ button { font:inherit; cursor:pointer; }
 .discipline li::before { content:""; width:6px; height:6px; margin-top:0.5rem; border-radius:50%; background:var(--accent); flex:none; }
 @media (max-width:760px){ .disciplines{ grid-template-columns:1fr; } }
 
+/* ---------- Google reviews badge + link ---------- */
+.gbadge { display:inline-flex; align-items:center; gap:1rem; margin-bottom:1.3rem; padding:0.65rem 1.2rem 0.65rem 1rem; border:1px solid var(--line-2); border-radius:999px; background:rgba(241,234,217,0.03); transition:border-color .25s, background .25s, transform .25s var(--ease); }
+.gbadge:hover { border-color:var(--accent); background:rgba(228,200,120,0.07); transform:translateY(-2px); }
+.gbadge img { height:34px; width:auto; }
+.gbadge-txt { font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); padding-left:1rem; border-left:1px solid var(--line-2); }
+.gbadge-txt b { color:var(--accent); font-weight:700; margin-right:0.35rem; }
+.reviews-link { display:flex; align-items:center; justify-content:center; gap:1rem; margin:2.4rem auto 0; width:max-content; max-width:100%; padding:0.9rem 1.4rem; border:1px solid var(--line-2); border-radius:999px; font-family:'Space Mono',monospace; font-size:0.76rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--fg); transition:border-color .25s, color .25s; }
+.reviews-link:hover { border-color:var(--accent); color:var(--accent); }
+.reviews-link img { height:26px; width:auto; }
+@media (max-width:520px){ .gbadge { flex-direction:column; gap:0.6rem; border-radius:16px; } .gbadge-txt { border-left:0; padding-left:0; } }
+
 /* ---------- Logo slider (Selected clients) ---------- */
 .logo-marquee { position:relative; overflow:hidden; margin-top:0; padding-block:1rem;
   -webkit-mask-image:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
