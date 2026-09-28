@@ -33,7 +33,7 @@ def page(slug, title, desc, crumb, service_name, service_type, body, faqs):
     ld = [
         {"@context": "https://schema.org", "@type": "Service", "@id": url + "#service", "name": service_name,
          "serviceType": service_type, "url": url, "description": clean(desc),
-         "provider": {"@type": ["ProfessionalService", "Organization"], "@id": SITE + "#org", "name": "Stellar Roots Media", "url": SITE},
+         "provider": {"@type": ["ProfessionalService", "Organization"], "@id": SITE + "#org", "name": "Stellar Roots Media", "url": SITE, "telephone": "+1-512-730-0132"},
          "areaServed": [{"@type": "City", "name": "Austin", "containedInPlace": {"@type": "State", "name": "Texas"}}, {"@type": "Country", "name": "United States"}]},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE},
@@ -45,6 +45,14 @@ def page(slug, title, desc, crumb, service_name, service_type, body, faqs):
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79V9W46W92"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', 'G-79V9W46W92');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title}</title>
