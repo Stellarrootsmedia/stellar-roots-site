@@ -234,6 +234,24 @@ button { font:inherit; cursor:pointer; }
 .tcard .who b { display:block; font-size:0.9rem; }
 .tcard .who span { color:var(--muted-2); font-size:0.78rem; font-family:'Space Mono',monospace; }
 
+/* ---------- Receipts (Ads Manager screenshots) ---------- */
+.receipts { max-width:1100px; margin:0 auto 3.6rem; display:grid; gap:1rem; }
+.receipts .kicker { justify-content:center; margin-bottom:0.4rem; }
+.receipt { margin:0; border:1px solid var(--line-2); border-radius:var(--radius-lg); overflow:hidden; background:var(--surface); box-shadow:var(--shadow); }
+.receipt figcaption { display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.4rem 1rem; padding:0.7rem 1rem; border-bottom:1px solid var(--line); font-family:'Space Mono',monospace; font-size:0.66rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted-2); }
+.receipt figcaption .k { color:var(--accent); }
+.receipt .shot { background:#fff; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.receipt .shot img { display:block; width:100%; min-width:760px; height:auto; }
+
+/* ---------- Behind the scenes ---------- */
+.bts { position:relative; margin:0 0 clamp(2.4rem,5vw,3.4rem); border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--line-2); }
+.bts img { width:100%; aspect-ratio:16/8; object-fit:cover; object-position:center 45%; display:block; }
+.bts::before, .bts::after { content:""; position:absolute; width:18px; height:18px; border:2px solid var(--accent); z-index:2; }
+.bts::before { top:12px; left:12px; border-right:0; border-bottom:0; }
+.bts::after { bottom:12px; right:12px; border-left:0; border-top:0; }
+.bts figcaption { position:absolute; left:0; right:0; bottom:0; padding:2.2rem 1.2rem 0.9rem; font-family:'Space Mono',monospace; font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--cream); background:linear-gradient(transparent, rgba(9,15,23,0.85)); }
+@media (max-width:640px){ .bts img { aspect-ratio:4/3; } }
+
 /* ---------- Process ---------- */
 .process { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1.6rem; }
 .pstep { border-top:2px solid var(--accent); padding-top:1rem; }

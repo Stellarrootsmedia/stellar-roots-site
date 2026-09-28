@@ -3,3 +3,5 @@ Thumbs.db
 *.log
 .claude/serve.py
 .claude/settings.local.json
+assets/Client results/
+assets/BTS/
