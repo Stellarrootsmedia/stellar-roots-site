@@ -223,7 +223,7 @@ button { font:inherit; cursor:pointer; }
 .pstat + .pstat::before { content:""; position:absolute; left:0; top:15%; bottom:15%; width:1px; background:var(--line); }
 .pstat b { font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(2.8rem,7vw,5rem); line-height:0.95; letter-spacing:-0.03em; color:var(--cream); display:block; }
 .pstat b .u { color:var(--accent); }
-.pstat span { color:var(--muted); font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.16em; text-transform:uppercase; display:block; margin-top:0.9rem; }
+.pstat > span { color:var(--muted); font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.16em; text-transform:uppercase; display:block; margin-top:0.9rem; }
 .proof-note { text-align:center; margin:1.8rem auto 3.6rem; font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted-2); }
 @media (max-width:640px){ .proof-stats{ grid-template-columns:1fr; gap:1.8rem; } .pstat + .pstat::before { left:30%; right:30%; top:-0.9rem; bottom:auto; width:auto; height:1px; } }
 .tgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.3rem; }
