@@ -1,0 +1,12 @@
+{
+  "name": "Stellar Roots Media",
+  "short_name": "Stellar Roots",
+  "description": "Austin creative & performance studio — premium video and Meta advertising.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101b2b",
+  "theme_color": "#101b2b",
+  "icons": [
+    { "src": "assets/logo-black.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
