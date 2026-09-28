@@ -218,15 +218,14 @@ button { font:inherit; cursor:pointer; }
 @media (max-width:560px){ .creative-grid{ grid-template-columns:repeat(2,1fr);} }
 
 /* ---------- Proof (bold stat row) ---------- */
-.proof-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:0; border-block:1px solid var(--line); margin-bottom:3rem; }
-.pstat { padding:1.8rem 1.2rem; border-right:1px solid var(--line); text-align:left; }
-.pstat:last-child { border-right:0; }
-.pstat b { font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(2.6rem,6.5vw,4.6rem); line-height:0.95; letter-spacing:-0.03em; color:var(--cream); display:block; }
+.proof-stats { display:grid; grid-template-columns:repeat(3,1fr); max-width:960px; margin-inline:auto; }
+.pstat { padding:0.6rem 1.2rem; text-align:center; position:relative; }
+.pstat + .pstat::before { content:""; position:absolute; left:0; top:15%; bottom:15%; width:1px; background:var(--line); }
+.pstat b { font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(2.8rem,7vw,5rem); line-height:0.95; letter-spacing:-0.03em; color:var(--cream); display:block; }
 .pstat b .u { color:var(--accent); }
-.pstat span { color:var(--muted); font-size:0.8rem; display:block; margin-top:0.6rem; }
-.pstat em { color:var(--muted-2); font-style:normal; font-family:'Space Mono',monospace; font-size:0.66rem; letter-spacing:0.08em; }
-@media (max-width:820px){ .proof-stats{ grid-template-columns:repeat(2,1fr);} .pstat:nth-child(2){border-right:0;} .pstat:nth-child(1),.pstat:nth-child(2){border-bottom:1px solid var(--line);} }
-@media (max-width:460px){ .proof-stats{ grid-template-columns:1fr;} .pstat{border-right:0;border-bottom:1px solid var(--line);} .pstat:last-child{border-bottom:0;} }
+.pstat span { color:var(--muted); font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.16em; text-transform:uppercase; display:block; margin-top:0.9rem; }
+.proof-note { text-align:center; margin:1.8rem auto 3.6rem; font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted-2); }
+@media (max-width:640px){ .proof-stats{ grid-template-columns:1fr; gap:1.8rem; } .pstat + .pstat::before { left:30%; right:30%; top:-0.9rem; bottom:auto; width:auto; height:1px; } }
 .tgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.3rem; }
 .tcard { border:1px solid var(--line); border-radius:var(--radius-lg); padding:1.7rem; background:var(--surface); }
 .tcard .q { font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:1.05rem; line-height:1.4; }
